@@ -509,3 +509,29 @@
     z-index: 2 !important;
   }
 }
+/* FIX: keep hero text above overlay */
+@media (min-width: 769px){
+
+  .hero .container,
+  .hero-content,
+  .hero-content *{
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .hero-content h1,
+  .hero-content .lead,
+  .hero-content p,
+  .hero-content .eyebrow{
+    color: #FFFDF8 !important;
+  }
+
+  .hero-content h1{
+    text-shadow: 0 2px 16px rgba(0,0,0,.38) !important;
+  }
+
+  .hero-content p,
+  .hero-content .lead{
+    text-shadow: 0 1px 10px rgba(0,0,0,.32) !important;
+  }
+}
