@@ -198,7 +198,7 @@
     display: flex !important;
     align-items: center !important;
     color: #fff !important;
-    background:
+    ground:
       radial-gradient(circle at 82% 18%, rgba(198,162,103,.16), transparent 34%),
       linear-gradient(135deg, #171614 0%, #24211d 54%, #111111 100%) !important;
     background-size: cover !important;
@@ -281,7 +281,7 @@
     background-size: cover !important;
 
     /* 第一個數字控制左右；數字變小，人物會往右 */
-    background-position: 10% 10% !important;
+    background-position: 5% 10% !important;
 
     background-repeat: no-repeat !important;
   }
@@ -434,3 +434,41 @@
     min-height: 58px !important;
     font-size: 18px !important;
   }
+/* FINAL: brighten Ann in home hero, keep dark overlay only behind text */
+@media (min-width: 769px){
+
+  .hero{
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+
+    background-image: url('../images/image-hero-collaboration-standing.jpg') !important;
+    background-size: 116% auto !important;
+    background-position: left 10% !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .hero::before{
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(13,13,13,.96) 0%,
+        rgba(13,13,13,.94) 25%,
+        rgba(13,13,13,.68) 34%,
+        rgba(13,13,13,.26) 43%,
+        rgba(13,13,13,.06) 52%,
+        rgba(13,13,13,0) 64%
+      ) !important;
+  }
+
+  .hero > .container{
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
