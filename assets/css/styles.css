@@ -321,3 +321,63 @@
     max-width: 600px !important;
   }
 }
+/* Mobile home hero fix: remove background face behind text */
+@media (max-width: 768px){
+
+  .hero{
+    margin-top: 68px !important;
+    padding: 40px 0 28px !important;
+    min-height: auto !important;
+    display: block !important;
+
+    background:
+      radial-gradient(circle at 85% 8%, rgba(198,162,103,.13), transparent 36%),
+      linear-gradient(135deg, #151515 0%, #1f1d1a 56%, #0f0f0f 100%) !important;
+    background-image:
+      radial-gradient(circle at 85% 8%, rgba(198,162,103,.13), transparent 36%),
+      linear-gradient(135deg, #151515 0%, #1f1d1a 56%, #0f0f0f 100%) !important;
+  }
+
+  .hero-content{
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+  }
+
+  .hero-content h1{
+    font-size: clamp(38px, 11vw, 52px) !important;
+    line-height: 1.18 !important;
+    margin: 22px 0 20px !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  .hero-content .lead{
+    font-size: 24px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hero-content p{
+    font-size: 18px !important;
+    line-height: 1.9 !important;
+    margin-bottom: 28px !important;
+  }
+
+  .mobile-hero-photo{
+    display: block !important;
+    margin: 28px 24px 0 !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+    box-shadow: 0 18px 50px rgba(0,0,0,.22) !important;
+  }
+
+  .mobile-hero-photo img{
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
