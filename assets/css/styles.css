@@ -472,3 +472,39 @@
     z-index: 2 !important;
   }
 }
+/* FINAL RESET: Home hero image brightness */
+@media (min-width: 769px){
+
+  .hero{
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+
+    /* 這行很重要：清掉舊的 background-image 黑色遮罩 */
+    background: url('../images/image-hero-collaboration-standing.jpg') left 10% / 116% auto no-repeat !important;
+  }
+
+  /* 只在左側文字區加暗色，不再壓到 Ann 全身 */
+  .hero::before{
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+
+    background: linear-gradient(
+      90deg,
+      rgba(13,13,13,.97) 0%,
+      rgba(13,13,13,.94) 24%,
+      rgba(13,13,13,.62) 34%,
+      rgba(13,13,13,.16) 42%,
+      rgba(13,13,13,0) 50%,
+      rgba(13,13,13,0) 100%
+    ) !important;
+  }
+
+  .hero > .container{
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
