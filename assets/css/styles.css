@@ -381,3 +381,56 @@
     object-position: center center !important;
   }
 }
+/* FINAL MOBILE HOME HERO TUNING */
+@media (max-width: 768px){
+
+  .hero{
+    margin-top: 68px !important;
+    padding: 44px 0 40px !important;
+    min-height: auto !important;
+    background:
+      radial-gradient(circle at 85% 8%, rgba(198,162,103,.12), transparent 36%),
+      linear-gradient(135deg, #151515 0%, #1f1d1a 58%, #0f0f0f 100%) !important;
+  }
+
+  .hero-content{
+    padding: 0 24px !important;
+  }
+
+  .eyebrow{
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+    letter-spacing: .08em !important;
+  }
+
+  .hero-content h1{
+    font-size: clamp(36px, 9.2vw, 44px) !important;
+    line-height: 1.22 !important;
+    letter-spacing: .01em !important;
+    margin: 24px 0 22px !important;
+    max-width: 100% !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .hero-content .lead{
+    font-size: 22px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-content p{
+    font-size: 17px !important;
+    line-height: 1.85 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .hero .actions{
+    gap: 14px !important;
+  }
+
+  .hero .btn{
+    width: 100% !important;
+    min-height: 58px !important;
+    font-size: 18px !important;
+  }
