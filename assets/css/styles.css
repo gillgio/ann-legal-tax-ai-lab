@@ -143,7 +143,7 @@
 
   /* Header */
   .site-header{
-    background: rgba(55,55,55,.94) !important;
+    backbackground: rgba(55,55,55,.94) !important;
     backdrop-filter: blur(8px);
   }
 
@@ -198,7 +198,7 @@
     display: flex !important;
     align-items: center !important;
     color: #fff !important;
-    ground:
+    background:
       radial-gradient(circle at 82% 18%, rgba(198,162,103,.16), transparent 34%),
       linear-gradient(135deg, #171614 0%, #24211d 54%, #111111 100%) !important;
     background-size: cover !important;
@@ -434,7 +434,8 @@
     min-height: 58px !important;
     font-size: 18px !important;
   }
-/* FINAL: brighten Ann in home hero, keep dark overlay only behind text */
+}
+
 @media (min-width: 769px){
 
   .hero{
