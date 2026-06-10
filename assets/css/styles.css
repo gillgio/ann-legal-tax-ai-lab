@@ -26,3 +26,33 @@
   .cards.cards-2,
   .cards.cards-5{grid-template-columns:1fr}
 }
+/* Desktop hero image fine tuning - 2026 update */
+@media (min-width: 769px){
+
+  /* Home */
+  .hero{
+    margin-top: 88px;
+    min-height: 672px;
+    background-position: center 22% !important;
+  }
+
+  /* About */
+  .page-hero.about-hero{
+    background-position: center 28% !important;
+  }
+
+  /* Topics */
+  .page-hero.topics-hero{
+    background-position: center 72% !important;
+  }
+
+  /* Content */
+  .page-hero.content-hero{
+    background-position: center 38% !important;
+  }
+
+  /* Contact */
+  .page-hero.contact-hero{
+    background-position: center 60% !important;
+  }
+}
