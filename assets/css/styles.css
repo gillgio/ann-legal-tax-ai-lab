@@ -535,3 +535,19 @@
     text-shadow: 0 1px 10px rgba(0,0,0,.32) !important;
   }
 }
+/* Content page: make all card images less cropped */
+@media (min-width: 769px){
+
+  .content-grid .content-card img,
+  .content-grid .content-card:nth-child(1) img,
+  .content-grid .content-card:nth-child(2) img,
+  .content-grid .content-card:nth-child(3) img,
+  .content-grid .content-card:nth-child(4) img,
+  .content-grid .content-card:nth-child(5) img,
+  .content-grid .content-card:nth-child(6) img{
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+}
