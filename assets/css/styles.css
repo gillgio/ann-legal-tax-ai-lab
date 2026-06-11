@@ -535,3 +535,12 @@
     text-shadow: 0 1px 10px rgba(0,0,0,.32) !important;
   }
 }
+/* Content page: fix cropped Ann article card image */
+@media (min-width: 769px){
+
+  .content-grid .content-card:nth-child(3) img{
+    height: 260px !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+  }
+}
