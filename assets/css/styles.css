@@ -535,13 +535,3 @@
     text-shadow: 0 1px 10px rgba(0,0,0,.32) !important;
   }
 }
-/* Content page: keep card image size consistent, only adjust Ann crop */
-@media (min-width: 769px){
-
-  .content-grid .content-card:nth-child(3) img{
-    height: 220px !important;
-    width: 100% !important;
-    object-fit: cover !important;
-    object-position: center 18% !important;
-  }
-}
