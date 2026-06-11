@@ -551,3 +551,13 @@
     object-position: center top !important;
   }
 }
+/* Content page: reset all content card images after image replacement */
+@media (min-width: 769px){
+
+  .content-grid .content-card img{
+    height: 220px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
